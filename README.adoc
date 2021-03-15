@@ -16,7 +16,7 @@ endif::[]
 
 First, install the dependencies with npm:
 
-    npm install
+    yarn install
 
 Then, you can start the frontend service with:
 
