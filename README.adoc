@@ -1,0 +1,37 @@
+= Minimal Full Stack Clojure / Clojurescript Project with re-frame
+:icons: font
+:icon-set: fa
+:source-highlighter: rouge
+:experimental:
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+:stem: latexmath
+endif::[]
+
+== Setup
+
+First, install the dependencies with npm:
+
+    npm install
+
+Then, you can start the frontend service with:
+
+    clj -M:watch
+
+You find the application at http://localhost:8700. Open re-frame 10x with `Ctrl+h`.
+
+Start the backend API with this alias:
+
+    clj -M:run-server
+
+Find the backend server at: http://localhost:3000/ping
+
+There are some more aliases, which can typically be used at hobby projects.
+
+== Using Calva
+
+When you are using Calva, you can start frontend and backend in one REPL Session by using the jack-in command, then choosing `deps.edn` and `:watch` as the preferred alias.
